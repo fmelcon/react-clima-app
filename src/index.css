@@ -3,6 +3,11 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.nav-wrapper {
+  background-color: #09326bde !important;
+}
+
 nav .brand-logo {
   display: block;
   text-align: center;
@@ -10,15 +15,29 @@ nav .brand-logo {
 }
 .input-field label {
   color: white;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.8s;
 }
 
-.input-field input[type="text"]:focus + label {
-  color: white;
+.error {
+  background-color: red;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.select-wrapper input.select-dropdown {
+  padding: 10px;
 }
 
 .input-field input[type="text"]:focus {
   border-bottom: 1px solid white;
-  box-shadow: 0 1px 0 0 #000;
+}
+
+.waves-effect input[type="button"],
+.waves-effect input[type="reset"],
+.waves-effect input[type="submit"] {
+  border: 0;
+  color: white;
 }
 
 input[type="text"]:not(.browser-default) {
@@ -34,9 +53,16 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
   color: white;
 }
 
+.row .col.s12 {
+  padding: 0;
+}
+
+.s12 {
+}
+
 .contenedor-form {
   padding: 3rem 0 1px 0;
-  background-color: #03a9f4;
+  background-color: #13bcd4;
 }
 .mensaje {
   text-align: center;
