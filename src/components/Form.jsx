@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const Form = ({ search, setSearch, setConsulta }) => {
   // State Form
-  const [search, setSearch] = useState({
-    ciudad: "",
-    pais: "",
-  });
+
   const [error, setError] = useState(false);
 
   // Extraer ciudad y pais
@@ -32,6 +29,7 @@ const Form = () => {
     }
     setError(false);
     // Pasarlo al componente principal
+    setConsulta(true);
   };
 
   return (
@@ -59,7 +57,9 @@ const Form = () => {
             <option value="PE">Perú</option>
             <option value="UY">Uruguay</option>
           </select>
-          <label htmlFor="pais">Pais:</label>
+          <label htmlFor="pais" className="pais">
+            Pais:
+          </label>
         </div>
       </div>
       <div className="input-field col s12">

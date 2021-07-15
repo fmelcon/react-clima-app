@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #13bcd4;
   font-family: sans-serif;
 }
 
@@ -53,11 +54,8 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
   color: white;
 }
 
-.row .col.s12 {
-  padding: 0;
-}
-
-.s12 {
+.pais {
+  left: 0 !important;
 }
 
 .contenedor-form {
@@ -102,4 +100,8 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
   padding: 1rem !important;
   text-align: center !important;
   color: #fff !important;
+}
+
+.html {
+  line-height: 0 !important;
 }
